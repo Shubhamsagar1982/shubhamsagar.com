@@ -1,0 +1,412 @@
+body {
+    background-color: #F3481E;
+    background-repeat: no-repeat;
+    position: unset;
+    height: 900px;
+    max-width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0px;
+    margin-right: 0px;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100.1%;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: #353435;
+    height: 83px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.me h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search {
+    display: inline;
+    color: white;
+    font-family: consolas;
+    float: right;
+    padding: 23px 0px;
+    cursor: pointer;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    #search {
+        display: inline;
+        color: white;
+        font-family: consolas;
+        float: right;
+        padding: 0px 0px 0px 0px;
+        margin: auto;
+        line-height: 20px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+}
+
+#search span:hover {
+    color: #255784;
+    background: #F71F05;
+    box-shadow: 0 0 10px #F71F05, 0 0 40px #F71F05, 0 0 80px #F71F05;
+    border-radius: 7px;
+}
+
+#search input {
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    #search input {
+        width: 100px;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    height: 78px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0%;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    .navbar {
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        display: inline-block;
+        position: absolute;
+        height: 100px;
+        width: auto;
+        padding: 10px;
+        margin: 2px;
+        line-height: 0%;
+    }
+}
+
+.logo {
+    display: block;
+    color: blanchedalmond;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+    margin: 0%;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    .logo {
+        display: inline-block;
+        color: blanchedalmond;
+        font-size: 10px;
+        max-height: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+        margin: 0%;
+    }
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    padding: 12px 0px 0px 30px;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    .logo img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        padding: 20px 0px 0px 1px;
+    }
+}
+
+ul li a {
+    color: white;
+    font-family: consolas;
+    line-height: 1px;
+    margin: 0% 10px;
+    padding: 0% 10px;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    ul li a {
+        color: white;
+        font-family: consolas;
+        size: 1px;
+        list-style: none;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        font-size: 10px;
+    }
+}
+
+ul li a:hover {
+    color: #255784;
+    background: #F71F05;
+    box-shadow: 0 0 10px #F71F05, 0 0 40px #F71F05, 0 0 80px #F71F05;
+    border-radius: 7px;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 12px;
+    margin: 4px;
+    line-height: 0%;
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    .nav li {
+        display: inline-block;
+        line-height: 0%;
+    }
+}
+
+#main {
+    display: inline-block;
+    max-width: 100%;
+    height: 50%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.info {
+    display: block;
+    background: black;
+    color: white;
+    margin-right: 5%;
+    margin-left: 10%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.details {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+#about {
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+#about h2 {
+    display: block;
+    margin: auto;
+    height: 90px;
+}
+
+.about {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+}
+
+.spons {
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#sp {
+    color: white;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    margin: auto;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsers {
+    background-color: black;
+    border: 2px solid white;
+    font-size: 13x;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+}
+
+#contact {
+    color: black;
+    font-size: 20px;
+    width: auto;
+    display: block;
+    display: flex;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 10%;
+    width: 100vw;
+    font-weight: bolder;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: inline-block;
+    background: white;
+    border: 2px solid black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+    padding: 20px;
+    margin: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #007bb5;
+    color: white;
+}
+
+
+/* .fa-linkedin:hover {
+    color: white;
+    background: #007bb5;
+    box-shadow: 0 0 10px #007bb5, 0 0 40px #007bb5, 0 0 80px #007bb5;
+} */
+
+.fa-github {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #EF13A6;
+    color: white;
+}
+
+.fa-facebook {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
